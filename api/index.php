@@ -1,4 +1,10 @@
 <?php
+print_r($_SERVER['REQUEST_METHOD']);
+print_r($_SERVER['request_method']);
+print_r($_SERVER);
+
+return;
+
 if(!isset($_ENV['APP_PRODUCTION'])) {
   require_once(__DIR__ . '/../vendor/autoload.php');
   $dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/..');
