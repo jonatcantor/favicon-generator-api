@@ -25,13 +25,13 @@ if(strtoupper($_SERVER['REQUEST_METHOD']) !== 'POST') {
 $jsonData = json_decode(file_get_contents('php://input'));
 $imageData = explode(',', $jsonData->image);
 
-$image = imagecreatefromstring(base64_decode($imageData[1]));
-$image = imagescale($image, 64, 64);
+$image = ImageCreateFromString(base64_decode($imageData[1]));
+$image = ImageScale($image, 64, 64);
 
-imagesavealpha($image, true);
+ImageSaveAlpha($image, true);
 
 ob_start();
-imagepng($image);
+ImagePng($image);
 $imageData = ob_get_contents();
 ob_end_clean();
 
