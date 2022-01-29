@@ -3,7 +3,7 @@ const sharp = require('sharp');
 const iconBuffer = async (base64Data) => {
   const base64Buffer = Buffer.from(base64Data, 'base64');
   const resizeBuffer = await sharp(base64Buffer)
-    .resize(32)
+    .resize(64)
     .toBuffer();
 
     return resizeBuffer;
