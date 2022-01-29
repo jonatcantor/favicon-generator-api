@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "sharp": "^0.29.3"
+  },
+  "name": "favicon-generator-api",
+  "description": "A simple POST API for the [Favicon Generator]() web app.",
+  "version": "1.0.0",
+  "main": "./api/index.js",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "scripts": {
+    "start": "node ./api/index.js",
+    "dev": "nodemon ./api/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonatcantor/favicon-generator-api.git"
+  },
+  "author": "Jonathan Cantor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonatcantor/favicon-generator-api/issues"
+  },
+  "homepage": "https://github.com/jonatcantor/favicon-generator-api#readme"
+}

@@ -1,0 +1,7 @@
+{
+  "env": {
+    "ORIGIN": "*",
+    "PRODUCTION": "false",
+    "PORT": "3001"
+  }
+}
